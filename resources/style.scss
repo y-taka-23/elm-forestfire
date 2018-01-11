@@ -1,0 +1,67 @@
+$field-width: 50;
+$field-height: 50;
+$cell-size: 5px;
+
+.cell {
+    width: $cell-size;
+    height: $cell-size;
+    position: absolute;
+    border-radius: 2px;
+}
+
+@for $x from 0 through $field-width - 1 {
+    .x-#{$x} {
+        left: $x * $cell-size;
+    }
+}
+
+@for $y from 0 through $field-height - 1 {
+    .y-#{$y} {
+        top: $y * $cell-size;
+    }
+}
+
+.empty {
+    background-color: white;
+}
+
+.tree {
+    background-color: #4CAF50;
+}
+
+.fire {
+    background-color: #F44336;
+}
+
+#field {
+    width: 2 + $field-width * $cell-size;
+    height: 2 + $field-height * $cell-size;
+    position: relative;
+    border: 1px solid lightgray;
+}
+
+#field-pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+#control-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+}
+
+#outer-pane {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border: 2px solid darkgray;
+    margin: 20px;
+    border-radius: 5px;
+}
