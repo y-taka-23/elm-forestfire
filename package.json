@@ -4,6 +4,7 @@
   "description": "A forest-fire model as a probabilistic cellular automaton.",
   "main": "./resources/index.js",
   "scripts": {
+    "build": "webpack -p",
     "start": "webpack-dev-server"
   },
   "keywords": [],
