@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "TAKAHASHI Yuto <ytaka23dev@gmail.com>",
-  "license": "BSD3",
+  "license": "BSD-3-Clause",
   "devDependencies": {
     "css-loader": "^0.28.8",
     "elm-webpack-loader": "^4.4.0",
